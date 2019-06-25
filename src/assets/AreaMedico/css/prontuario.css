@@ -1,0 +1,31 @@
+.title {
+     text-align: center;
+     padding-bottom: 50px
+}
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    
+}
+body {
+    background-repeat: no-repeat;
+    background-size: 100%
+}
+body h1 {
+    margin-top: 50px;
+    
+}
+#labels {
+    color: red;
+    font-size: 150%;
+
+}
+.form-group{
+    padding-top: 20px;
+}
