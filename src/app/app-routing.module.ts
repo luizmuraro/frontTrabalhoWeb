@@ -8,8 +8,8 @@ import {PaginaAdicionarPacienteComponent} from './pagina-adicionar-paciente/pagi
 const routes: Routes = [
 //   {path: '', component: LoginComponent},
 //  {path: '', component: PaginaMedicoComponent}
- //    {path: '', component: PaginaPacienteComponent}       
- // {path: '', component: PaginaAdicionarPacienteComponent}
+    {path: '', component: PaginaPacienteComponent}       
+  //{path: '', component: PaginaAdicionarPacienteComponent}
 ];
 
 @NgModule({
