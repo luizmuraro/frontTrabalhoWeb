@@ -1,4 +1,6 @@
+import { PacientesService } from './../shared/pagina-medico/pacientes.service';
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-pagina-paciente',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaginaPacienteComponent implements OnInit {
 
-  constructor() { }
+  pacientes: Array<any>;
+
+  constructor(private pacientesService: PacientesService) { }
 
   ngOnInit() {
+    this.pacientesService.getAll().subscribe(data => {
+      this.pacientes = data;
+    })
   }
 
 }

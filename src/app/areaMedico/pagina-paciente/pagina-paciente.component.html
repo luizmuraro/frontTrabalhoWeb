@@ -1,3 +1,5 @@
+
+
 <!-- <head> -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -134,34 +136,21 @@
                                               <th>#</th>
                                               <th>Nome</th>
                                               <th>CPF</th>
+                                              <th>Telefone</th>
+                                              <th>Email</th>
                                               <th>Prontuário</th>
                                           </tr>
                                       </thead>
                                       <tbody>
-                                          <tr>
-                                              <td>1</td>
-                                              <td>Nome do Paciente</td>
-                                              <td>999.999.999-99</td>
-                                              <td>Download</td>
-                                          </tr>
-                                          <tr>
-                                              <td>2</td>
-                                              <td>Nome do Paciente</td>
-                                              <td>999.999.999-99</td>
-                                              <td>Download</td>
-                                          </tr>
-                                          <tr>
-                                              <td>3</td>
-                                              <td>Nome do Paciente</td>
-                                              <td>999.999.999-99</td>
-                                              <td>Download</td>
-                                          </tr>                                           
-                                           <tr>
-                                              <td>4</td>
-                                              <td>Nome do Paciente</td>
-                                              <td>999.999.999-99</td>
-                                              <td>Download</td>
-                                          </tr>
+                                            
+                                          <tr *ngFor="let paciente of pacientes">
+                                                <th>{{paciente.id}}</th>
+                                                <td>{{paciente.nome}}</td>
+                                                <td>{{paciente.cpf}}</td>
+                                                <td>{{paciente.telefone}}</td>
+                                                <td>{{paciente.email}}</td>
+                                                <th>Download</th>
+                                          </tr>                            
                                       </tbody>
                                   </table>
                               </div>
