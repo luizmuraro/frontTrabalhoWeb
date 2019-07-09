@@ -6,10 +6,10 @@ import { PaginaPacienteComponent } from './areaMedico/pagina-paciente/pagina-pac
 import {PaginaAdicionarPacienteComponent} from './pagina-adicionar-paciente/pagina-adicionar-paciente.component';
 
 const routes: Routes = [
-//   {path: '', component: LoginComponent},
-//  {path: '', component: PaginaMedicoComponent}
-    {path: '', component: PaginaPacienteComponent}       
-  //{path: '', component: PaginaAdicionarPacienteComponent}
+  {path: '', component: LoginComponent},
+  {path: 'medico', component: PaginaMedicoComponent},
+  {path: 'paciente', component: PaginaPacienteComponent},       
+  {path: 'cadastro', component: PaginaAdicionarPacienteComponent}
 ];
 
 @NgModule({

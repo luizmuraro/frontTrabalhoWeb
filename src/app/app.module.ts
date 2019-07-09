@@ -9,6 +9,10 @@ import { PaginaMedicoComponent } from './areaMedico/pagina-medico/pagina-medico.
 import { PaginaPacienteComponent } from './areaMedico/pagina-paciente/pagina-paciente.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { PaginaAdicionarPacienteComponent } from './pagina-adicionar-paciente/pagina-adicionar-paciente.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -17,12 +21,17 @@ import { PaginaAdicionarPacienteComponent } from './pagina-adicionar-paciente/pa
     LoginComponent,
     PaginaMedicoComponent,
     PaginaPacienteComponent,
-    PaginaAdicionarPacienteComponent
+    PaginaAdicionarPacienteComponent,
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

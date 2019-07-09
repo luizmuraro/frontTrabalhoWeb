@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row justify-content-center align-items-center" style="height:100vh">
+      <div class="col-5">
+        <h3>Adicionar paciente TeleMed</h3>
+        <div class="card">
+          <div class="card-body">
+            <form [formGroup]="pacienteForm" action="" autocomplete="off">
+            <div class="form-group">
+              <input formControlname="nome" type="text" class="form-control" placeholder="Nome do Paciente" required >
+            </div>
+            <div class="form-group">
+                <input formControlname="cpf" type="number" class="form-control" placeholder="CPF do Paciente" required >
+            </div>
+            <div class="form-group">
+                <input formControlname="email" type="text" class="form-control" placeholder="E-mail do Paciente" required >
+            </div>
+            <div class="form-group">
+                <input formControlname="telefone" type="number" class="form-control" placeholder="Telefone do Paciente" required >
+            </div>
+            <div class="form-group">
+                <input formControlname="anamnese" type="text" class="form-control" placeholder="Anamnese do Paciente" required >
+            </div>
+            <div class="form-group">
+                <input formControlname="diagnostico" type="text" class="form-control" placeholder="Diagnostico do Paciente" required >
+            </div>
+            <div class="form-group">
+                <input formControlname="tratamento" type="text" class="form-control" placeholder="Tratamento do Paciente" required >
+            </div>
+
+            <button type="button" class="btn btn-primary" id="botao" (click)="adicionarPaciente()" >Cadastrar Paciente</button>
+          </form>
+
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
