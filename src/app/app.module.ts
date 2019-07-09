@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { PaginaMedicoComponent } from './areaMedico/pagina-medico/pagina-medico.component';
 import { PaginaPacienteComponent } from './areaMedico/pagina-paciente/pagina-paciente.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { PaginaAdicionarPacienteComponent } from './pagina-adicionar-paciente/pagina-adicionar-paciente.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     ProntuarioComponent,
     LoginComponent,
     PaginaMedicoComponent,
-    PaginaPacienteComponent
+    PaginaPacienteComponent,
+    PaginaAdicionarPacienteComponent
   ],
   imports: [
     BrowserModule,

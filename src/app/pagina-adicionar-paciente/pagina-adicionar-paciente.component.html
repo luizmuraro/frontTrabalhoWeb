@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="row justify-content-center align-items-center" style="height:100vh">
+        <div class="col-5">
+            <h3>BRY - Exemplo assinatura PDF com certificado digital em nuvem</h3>
+            <div class="card">
+                <div class="card-body">
+                    <form [formGroup]="" action="" autocomplete="off">
+                       <div class="form-group">
+                            <label for="ImgConfig"><b>Configurações de imagem: </b></label>
+                            <div class="campos">
+                            <label for="">Altura: </label>
+                            <input formControlName="altura" type="number" class="form-control" placeholder="Altura"
+                                required>
+                                <label for="">Largura: </label>
+                            <input formControlName="largura" type="number" class="form-control" placeholder="Largura"
+                                required>
+                                <label for="">CoordenadaX: </label>
+                            <input formControlName="coordenadaX" type="number" class="form-control"
+                                placeholder="Coordenada X" >
+                                <label for="">CoordenadaY: </label>
+                            <input formControlName="coordenadaY" type="number" class="form-control"
+                                placeholder="CoordenadaY" >
+                                <label for="">Posição: </label>
+                                <select formControlName="posicao" id="posicao" class="form-control" >
+                                    <option value="" disabled selected>Seleciono a posição da assinatura </option>
+                                    <option value="INFERIOR_DIREITO">Inferior direito</option>
+                                    <option value="INFERIOR_ESQUERDO">Inferior esquerdo</option>
+                                    <option value="SUPERIOR_DIREITO">Superior direito</option>
+                                    <option value="SUPERIOR_ESQUERDO">Superior esquerdo</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="textConfig"><b>Configurações de texto:</b></label>
+                            <input formControlName="incluirTexto" type="text" class="form-control"
+                                placeholder="Texto da assinatura" required>
+                            <input formControlName="incluirCN" type="checkbox" name="incluirCN" value="incluirCN" >
+                            Incluir nome do Certificado <br>
+                            <input formControlName="incluirCPF" type="checkbox" name="incluirCPF" value="incluirCPF" >
+                            Incluir CPF <br>
+
+                        </div>
+
+                        <button type="button" class="btn btn-primary" id="botao" (click)="assinar()" >Assinar</button>
+                        <button class="btn btn-danger" id="botao" (click)='limpar()'>Limpar</button>
+
+                        
+                    </form>
+                </div>
+            </div>
